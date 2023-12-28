@@ -1,0 +1,41 @@
+﻿@model Users
+
+<style>
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .ortala {
+        text-align: center;
+    }
+
+    gorunurOl {
+        background-color: #333333;
+        font-weight: bold;
+    }
+</style>
+
+<h1> Oyuncu Listesi</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th class="ortali">Player ID</th>
+            <th class="ortali">FullName</th>
+            <th class="ortali">Username</th>
+            <th class="ortali">E-Mail</th>
+            <th class="ortali">City</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="gorunurOl">
+            <td>@Model.UserId</td>
+            <td>@Model.FullName</td>
+            <td>@Model.Username</td>
+            <td>@Model.Email</td>
+            <td>@Model.City</td>
+        </tr>
+    </tbody>
+</table>
